@@ -1,6 +1,13 @@
 # Etapa 1: Construcción
 FROM gradle:8.0-jdk17 AS builder
 
+
+RUN curl -fsSLO https://get.docker.com/builds/Linux/x86_64/docker-17.04.0-ce.tgz \
+  && tar xzvf docker-17.04.0-ce.tgz \
+  && mv docker/docker /usr/local/bin \
+  && rm -r docker docker-17.04.0-ce.tgz
+
+
 # Establece el directorio de trabajo
 WORKDIR /app
 
