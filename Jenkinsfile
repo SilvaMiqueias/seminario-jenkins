@@ -8,9 +8,7 @@ pipeline {
 
     stages {
         stage('Checkout') {
-            steps {
-
-            }
+            echo 'Comecou o checkout'
         }
 
         stage('Build') {
