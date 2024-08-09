@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE_NAME = 'teste-docker-jenkins:v3'
+        DOCKER_IMAGE_NAME = 'teste-docker-jenkins'
         DOCKER_TAG = 'latest'
     }
 
